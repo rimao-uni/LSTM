@@ -8,8 +8,8 @@ LSTMセルは、以下の主要な部分から構成される。
 ・忘却ゲート（Forget Gate）: セルの状態からどれだけ情報を忘れるかを制御  
 ・セルの候補値（Cell Candidate）: 新しい情報をセルの状態に追加するための候補値  
 ・出力ゲート（Output Gate）: 隠れ状態をどれだけ次の時間ステップの入力に反映させるかを制御  
-
-以下にLSTM（Long Short-Term Memory）セルの更新式を示す。
+以下にLSTM（Long Short-Term Memory）セルの更新式を示す。  
+<img src="https://github.com/rimao-uni/LSTM/assets/117995370/eeb68dde-6247-4485-b0fd-53ea902c61f3" height="400">
 
 $$i_t = \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi})$$
 
