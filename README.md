@@ -1,6 +1,6 @@
 # LSTM
 PyTorch for LSTM  
-$$\begin{array}{ll} \\
+$$\begin{array}{llllll} \\
 i_t = \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi}) \\
 f_t = \sigma(W_{if} x_t + b_{if} + W_{hf} h_{t-1} + b_{hf}) \\
 g_t = \tanh(W_{ig} x_t + b_{ig} + W_{hg} h_{t-1} + b_{hg}) \\
