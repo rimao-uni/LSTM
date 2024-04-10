@@ -2,7 +2,6 @@
 
 ## Description
 LSTM（Long Short-Term Memory）は、回帰結合型ニューラルネットワーク（RNN）の一種であり、時系列データを扱うためのモデルである。LSTMは、系列データ内の長期的な依存関係を学習し、勾配消失問題を軽減することができる。  
-従来のRNNでは、時間ステップごとに隠れ状態が更新され、情報が時間を経て消失することが問題であったが、LSTMでは、セルの状態というメモリセルを導入することで、長期的な情報を保持することを可能にした。  
 LSTMセルは、以下の主要な部分から構成される。  
 
 ・入力ゲート（Input Gate）: 新しい情報をどれだけセルの状態に追加するかを制御  
@@ -11,7 +10,7 @@ LSTMセルは、以下の主要な部分から構成される。
 ・出力ゲート（Output Gate）: 隠れ状態をどれだけ次の時間ステップの入力に反映させるかを制御  
 
 以下にLSTM（Long Short-Term Memory）セルの図と更新式を示す。  
-<img src="https://github.com/rimao-uni/LSTM/assets/117995370/4f666e9a-8f5c-473f-9979-34bbf557b0b9" height="400">
+<img src="https://github.com/rimao-uni/LSTM/assets/117995370/4f666e9a-8f5c-473f-9979-34bbf557b0b9" height="500">
 
 $$i_t = \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi})$$
 
@@ -25,6 +24,7 @@ $$c_t = f_t \odot c_{t-1} + i_t \odot g_t$$
 
 $$h_t = o_t \odot \tanh(c_t)$$
 
+従来のRNNでは、時間ステップごとに隠れ状態が更新され、情報が時間を経て消失することが問題であったが、LSTMでは、セルの状態というメモリセルを導入することで、長期的な情報を保持することを可能にした。  
 
 ## Requirement
 ```
