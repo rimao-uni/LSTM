@@ -11,7 +11,7 @@ LSTMセルは、以下の主要な部分から構成される。
 ・出力ゲート（Output Gate）: 隠れ状態をどれだけ次の時間ステップの入力に反映させるかを制御  
 
 以下にLSTM（Long Short-Term Memory）セルの図と更新式を示す。  
-<img src="https://github.com/rimao-uni/LSTM/assets/117995370/eeb68dde-6247-4485-b0fd-53ea902c61f3" height="300">
+<img src="https://github.com/rimao-uni/LSTM/assets/117995370/4f666e9a-8f5c-473f-9979-34bbf557b0b9" height="300">
 
 $$i_t = \sigma(W_{ii} x_t + b_{ii} + W_{hi} h_{t-1} + b_{hi})$$
 
