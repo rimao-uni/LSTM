@@ -23,7 +23,7 @@ class EarlyStopping():
                 if not os.path.exists(self.model_path):
                     os.makedirs(self.model_path)
                 
-                file_nm = os.path.join(self.model_path, f"{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}_RNN")
+                file_nm = os.path.join(self.model_path, f"{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}_LSTM")
                 torch.save(model.state_dict(), file_nm)
 
                 return True
